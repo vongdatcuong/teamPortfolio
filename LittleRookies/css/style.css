@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url("../images/background-img.gif");
+	background-size: contain;
+}
+.container {
+	width: 80%;
+	text-align: center;
+	margin: 50px auto;
+}
+.container h1 {
+	font-size: 5em;
+}
+.personal-info{
+	list-style-type: none;
+	text-align: left;
+}
