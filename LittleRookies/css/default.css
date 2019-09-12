@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url("../images/background-img.gif");
+	background-size: cover;
+}
+.container {
+	width: 80%;
+	text-align: center;
+	margin: 50px auto;
+}
+.container h1 {
+	font-size: 5em;
+	font-family: "Vineta BT";
+	color: MidnightBlue;
+	margin: 5px;
+}
+#hcmus-logo {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+#fit-logo {
+	margin: 0 0 -6px 0;
+	padding: 0;
+}
+#team-picture {
+	border: 1px solid #ddd;
+  	border-radius: 4px;
+  	padding: 6px;
+  	background-color: white;
+}
+.member-wrapper {
+	border-radius: 20px;
+	border: 3px dashed darkorange;
+	background-color: #ffffff;
+	padding: 10px 10px 150px 10px;
+	margin: 0 auto;
+}
+.personal-info ul{
+	width: 80%;
+	float: left;
+	list-style-type: none;
+	text-align: left;	
+	font-size: 2em;
+	font-family: david;
+	color: darkblue;
+}
+.personal-info ul li {
+	padding: 5px 0;
+}
+.selfie {
+	width: 20%;
+	float: right;
+}
+.back {
+	text-align: left;
+	text-decoration: none;
+}
