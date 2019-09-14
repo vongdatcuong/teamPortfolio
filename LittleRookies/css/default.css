@@ -29,30 +29,59 @@ body {
 	border: 1px solid #ddd;
   	border-radius: 4px;
   	padding: 6px;
-  	background-color: white;
+  	background-color: #888888;
+  	box-shadow: 5px 5px 10px 5px #AAAAAA;
+}
+#team-members {
+	text-align:center;
+	max-width: 400px;
+	margin: 10px auto;
+	font-size: 1.5em;
+	font-family: Arial;
+	color: MidnightBlue;
+}
+#team-members table	{
+	width: 100%;
+	margin: 0 auto;
+}
+#team-members table	td:first-child{
+	text-align: left;
+}
+#team-members table	td:nth-child(2){
+	text-align: right;
 }
 .member-wrapper {
 	border-radius: 20px;
 	border: 3px dashed darkblue;
-	background-color: #ffffff;
-
-
+	background-color: rgba(255, 255, 255, 0.9);
 }
-.personal-info ul{
-	width: 70%;
+.personal-info{
+	width: 75%;
 	float: left;
-	list-style-type: none;
 	text-align: left;	
-	font-size: 2em;
+	font-size: 1.8em;
 	font-family: david;
 	color: darkblue;
 }
-.personal-info ul li {
-	padding: 5px 0;
+.personal-info table {
+	padding: 10px 5px 10px 20px;
+	margin: 10px 0;
+}
+.personal-info td:first-child {
+	width: 20%;
+}
+.personal-info table td {
+	vertical-align: text-top;
 }
 .selfie {
-	width: 30%;
+	width: 25%;
 	float: right;
+	padding: 20px 10px;
+}
+.selfie img {
+	border: 7px solid gray; 
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px 5px #AAAAAA;
 }
 .back {
 	text-align: left;
