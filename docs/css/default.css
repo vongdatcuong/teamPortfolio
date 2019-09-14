@@ -5,6 +5,9 @@ body {
 	background: url("../images/background-img.gif");
 	background-size: cover;
 }
+img {
+	max-width: 100%;
+}
 .container {
 	width: 80%;
 	text-align: center;
@@ -79,9 +82,14 @@ body {
 	padding: 20px 10px;
 }
 .selfie img {
+	max-width: 100%;
 	border: 7px solid gray; 
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px 5px #AAAAAA;
+}
+.icons-bar {
+	width: 25%;
+	float: right;
 }
 .back {
 	text-align: left;
