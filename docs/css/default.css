@@ -5,9 +5,18 @@ body {
 	background: url("../images/background-img.gif");
 	background-size: cover;
 }
-img {
-	max-width: 100%;
+.flying-left-to-right {
+	position: fixed;
+	z-index: 1;
+	animation: flyLeftToRight 8s linear infinite,  flyUpAndDown 6s linear infinite;
 }
+.flying-bottom-to-top {
+	position: fixed;
+	z-index: 1;
+	left: 70%;
+	animation: flyBottomToTop 3s ease-in infinite;
+}
+/*Team Page*/
 .container {
 	width: 80%;
 	text-align: center;
@@ -18,6 +27,7 @@ img {
 	font-family: cursive;
 	color: MidnightBlue;
 	margin: 5px;
+	animation: rainbowColor 2s linear infinite;
 }
 #hcmus-logo {
 	position: absolute;
@@ -47,16 +57,47 @@ img {
 	width: 100%;
 	margin: 0 auto;
 }
+#team-members table thead tr th span:first-child {
+	font-size: 1.2em; 
+	font-family: cursive;
+	text-decoration: underline;
+}
+#team-members table thead tr th span:nth-child(3) {
+	font-size: 0.7em
+}
+#team-members table td {
+	font-weight: bold;
+}
 #team-members table	td:first-child{
 	text-align: left;
 }
 #team-members table	td:nth-child(2){
 	text-align: right;
 }
+/*Personal pages*/
 .member-wrapper {
+	position: relative;
+
 	border-radius: 20px;
 	border: 3px dashed darkblue;
 	background-color: rgba(255, 255, 255, 0.9);
+	padding: 10px 0;
+	animation: rainbowBorderColor 2s linear infinite;
+}
+.member-wrapper:hover {
+	border-width: 6px;
+	transition: all 1s;
+}
+.screw-head {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+.screw-head:hover {
+	animation: spin 0.5s linear infinite;
+	cursor: pointer;
 }
 .personal-info{
 	width: 75%;
@@ -72,6 +113,7 @@ img {
 }
 .personal-info td:first-child {
 	width: 20%;
+	font-weight: bold;
 }
 .personal-info table td {
 	vertical-align: text-top;
@@ -80,6 +122,9 @@ img {
 	width: 25%;
 	float: right;
 	padding: 20px 10px;
+}
+.selfie:hover {
+	animation: divShaking 0.5s ease-in;
 }
 .selfie img {
 	max-width: 100%;
@@ -91,10 +136,72 @@ img {
 	width: 25%;
 	float: right;
 }
+.icons-bar a img:hover {
+	width: 40px;
+	height: 40px;
+	transform-origin: 50% 100%;
+	transition: all 0.6s;
+}
 .back {
 	text-align: left;
 	text-decoration: none;
 }
+.back:hover {
+	font-size: 1.2em;
+	color: #333;
+	transition: all 0.5s;
+}
 .clearfix {
-  overflow: auto;
+  overflow: hidden;
+}
+
+/*Key Frames*/
+@keyframes rainbowColor {
+	0% {color: violet;}
+	16% {color: indigo;}
+	32% {color: blue;}
+	48% {color: green;}
+	64% {color: yellow;}
+	80% {color: orange;}
+	100% {color: red;}
+}
+@keyframes rainbowBorderColor {
+	0% {border-color: violet;}
+	16% {border-color: indigo;}
+	32% {border-color: blue;}
+	48% {border-color: green;}
+	64% {border-color: yellow;}
+	80% {border-color: orange;}
+	100% {border-color: red;}
+}
+@keyframes borderSize {
+	0% {border-width: thin;}
+	50% {border-width: medium;}
+	100% {border-width: thick;}
+}
+@keyframes divShaking {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(-30deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(30deg);}
+	100% {transform: rotate(0deg);}
+}
+@keyframes flyLeftToRight {
+	0% {left: 0px;}
+	100% {left: 100%;}
+}
+@keyframes flyUpAndDown {
+	0% {top: 5%;}
+	20% {top: 60%;}
+	50% {top: 100%;}
+	85% {top: 60%;}
+	100% {top: 0%;}
+}
+@keyframes flyBottomToTop {
+	0% {top: 100%;}
+	100% {top: 0;}
+}
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
 }
